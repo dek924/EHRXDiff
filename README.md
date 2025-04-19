@@ -3,7 +3,7 @@
 <br>
 <a href="https://dek924.github.io/"> Daeun Kyung</a>,
 <a href="https://starmpcc.github.io/"> Junu Kim</a>,
-Tackeun Kim,
+<a href="https://scholar.google.co.kr/citations?user=9juBDkAAAAAJ&hl=ko"> Tackeun Kim</a>,
 <a href="https://mp2893.com/"> Edward Choi</a>
 <br>
 <a href="https://chil.ahli.cc/"> CHIL 2025 (Poster) </a>
