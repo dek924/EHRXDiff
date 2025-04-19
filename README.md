@@ -106,3 +106,17 @@ This implementation uses code from following repositories:
 - [Official Latent Diffusion Models implementation](https://github.com/CompVis/latent-diffusion)
 
 We thank the authors for their open-sourced code.
+
+
+## Citation
+```
+@inproceedings{kyung2025ehrxdiff, 
+  title={Towards Predicting Temporal Changes in a Patient's Chest X-ray Images based on Electronic Health Records},
+  author={Kyung, Daeun and Kim, Junu and Kim, Tackeun and Choi, Edward},
+  booktitle={Proc. of Conference on Health, Inference, and Learning (CHIL)},
+  year={2025}
+}
+```
+
+## Contact
+For any questions or concerns regarding this code, please contact to us ([kyungdaeun@kaist.ac.kr](mailto:kyungdaeun@kaist.ac.kr)).
