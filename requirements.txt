@@ -1,0 +1,24 @@
+torchvision
+pytorch-lightning==1.6.5
+opencv-python-headless
+numba
+numpy==1.25.2
+albumentations
+pudb
+imageio
+imageio-ffmpeg
+omegaconf
+test-tube
+streamlit
+einops
+torch-fidelity
+transformers
+wandb
+kornia
+h5py
+tqdm
+scikit-learn
+torchxrayvision==1.1.1
+-e "git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers"
+-e "git+https://github.com/openai/CLIP.git@main#egg=clip"
+-e "git+https://github.com/katsura-jp/pytorch-cosine-annealing-with-warmup#egg=cosine-annealing-warmup"
