@@ -18,6 +18,7 @@ from functools import partial
 from tqdm import tqdm
 from torchvision.utils import make_grid
 from pytorch_lightning.utilities.distributed import rank_zero_only
+from huggingface_hub import PyTorchModelHubMixin
 
 from cheff.ldm.util import log_txt_as_img, exists, default, ismap, isimage, mean_flat, count_params, instantiate_from_config
 from cheff.ldm.modules.ema import LitEma
@@ -1612,6 +1613,11 @@ class LatentDiffusion(DDPM):
         x = nn.functional.conv2d(x, weight=self.colorize)
         x = 2.0 * (x - x.min()) / (x.max() - x.min()) - 1.0
         return x
+
+
+class EHRXDiff(LatentDiffusion, PyTorchModelHubMixin):
+    def __init__(self, config):
+        super().__init__(**config)
 
 
 class DiffusionWrapper(pl.LightningModule):
