@@ -13,6 +13,15 @@ Chest X-ray (CXR) is an important diagnostic tool widely used in hospitals to as
 
 <img src="model.png"> 
 
+<br />
+
+## Updates
+- [08/27/2025] Our model is now available on [Hugging Face](https://huggingface.co/dek924/ehrxdiff).
+- [06/26/2025] We presented our paper as a poster at CHIL 2025.
+- [05/06/2025] We updated our paper on [arXiv](https://www.arxiv.org/abs/2505.17818).
+- [09/11/2024] We released our research paper on [arXiv](https://www.arxiv.org/abs/2505.17818).
+
+<br />
 
 ## Environment
 
@@ -59,13 +68,22 @@ After obtaining access, follow the steps in [prepare_datasets.md](./data_preproc
 #### Model Checkpoint
 To train our model, you need the pretrained checkpoints, 1) Chest X-ray autoencoder, 2) CXR-EHR CLIP pre-trained model weight. You can download these weights in below link:
 1) Chest X-ray autoencoder (from <a href="https://github.com/saiboxx/chexray-diffusion">Cheff original implementation</a>) [<a href="https://syncandshare.lrz.de/getlink/fiQ6wTe7K7otQzyifNh9av/cheff_autoencoder.pt">link</a>]
-2) CXR-EHR CLIP pre-trained model weight (Will be available soon)
+2) CXR-EHR CLIP pre-trained model weight (from <a href="https://huggingface.co/dek924/ehrxdiff">Hugging Face</a>)
+    - Use the following code to download the model:
+        ```python
+        from huggingface_hub import hf_hub_download
+
+        hf_hub_download("dek924/ehrxdiff_wnull", "checkpoints/clip_vit32_256_1024.ckpt")
+        ```
     - After downloading, move these checkpoints to the `EHRXDiff/trained_models`.
-    - You can alse pretrain your own model, following the [CLIP_pretrain.md](./CLIP_pretrain/CLIP_pretrain.md)
+    - You can also pre-train your own model by following the instructions in [CLIP_pretrain.md](./CLIP_pretrain/CLIP_pretrain.md)
 
 #### EHRXDiff Checkpoint
-We will provide pretrained weights for our models, EHRXDiff and EHRXDiff<sub>w_null</sub>.
-<br />
+The pre-trained weights for our models, **EHRXDiff** and **EHRXDiff<sub>w\_null</sub>**, are available on Hugging Face:
+
+* **EHRXDiff**: [https://huggingface.co/dek924/ehrxdiff](https://huggingface.co/dek924/ehrxdiff)
+* **EHRXDiff<sub>w\_null</sub>**: [https://huggingface.co/dek924/ehrxdiff\_wnull](https://huggingface.co/dek924/ehrxdiff_wnull)
+
 <br />
 
 
