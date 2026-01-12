@@ -18,8 +18,8 @@ Chest X-ray (CXR) is an important diagnostic tool widely used in hospitals to as
 ## Updates
 - [08/27/2025] Our model is now available on [Hugging Face](https://huggingface.co/dek924/ehrxdiff).
 - [06/26/2025] We presented our paper as a poster at CHIL 2025.
-- [05/06/2025] We updated our paper on [arXiv](https://www.arxiv.org/abs/2505.17818).
-- [09/11/2024] We released our research paper on [arXiv](https://www.arxiv.org/abs/2505.17818).
+- [05/06/2025] We updated our paper on [arXiv](https://arxiv.org/abs/2409.07012).
+- [09/11/2024] We released our research paper on [arXiv](https://arxiv.org/abs/2409.07012).
 
 <br />
 
